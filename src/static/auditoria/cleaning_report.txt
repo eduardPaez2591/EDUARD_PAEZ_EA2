@@ -1,0 +1,55 @@
+================================================================================
+REPORTE DE AUDITORÍA - LIMPIEZA DE DATOS
+================================================================================
+
+Fecha de ejecución: 2026-03-16 19:00:54
+
+ESTADÍSTICAS ANTES DE LIMPIEZA:
+--------------------------------------------------------------------------------
+Registros totales: 1275
+Columnas: 23
+Duplicados: 0
+Uso de memoria: 1.04 MB
+
+Valores nulos por columna:
+
+ESTADÍSTICAS DESPUÉS DE LIMPIEZA:
+--------------------------------------------------------------------------------
+Registros totales: 628
+Columnas: 26
+Duplicados: 0
+Uso de memoria: 0.53 MB
+
+COMPARATIVA:
+--------------------------------------------------------------------------------
+Registros eliminados: 647
+Tasa de retención: 49.25%
+
+LOG DE OPERACIONES:
+--------------------------------------------------------------------------------
+[2026-03-16 19:00:53] Datos cargados desde d:\Documentos\Ingenieria de Software y Datos\Infraestructura y arquitectura para Big Data\Eduard_Paez_EA2\data_raw\laptop_prices.csv
+[2026-03-16 19:00:53] Registros iniciales: 1275
+[2026-03-16 19:00:53] ==================================================
+[2026-03-16 19:00:53] INICIANDO LIMPIEZA DE DATOS
+[2026-03-16 19:00:53] ==================================================
+[2026-03-16 19:00:53] Duplicados eliminados: 0
+[2026-03-16 19:00:53] Tipos de datos corregidos correctamente
+[2026-03-16 19:00:53] Outliers eliminados en 'Inches': 37
+[2026-03-16 19:00:53] Outliers eliminados en 'Ram': 218
+[2026-03-16 19:00:53] Outliers eliminados en 'Weight': 15
+[2026-03-16 19:00:53] Outliers eliminados en 'Price_euros': 21
+[2026-03-16 19:00:53] Outliers eliminados en 'ScreenW': 26
+[2026-03-16 19:00:53] Outliers eliminados en 'ScreenH': 10
+[2026-03-16 19:00:53] Outliers eliminados en 'CPU_freq': 7
+[2026-03-16 19:00:53] Outliers eliminados en 'PrimaryStorage': 226
+[2026-03-16 19:00:53] Outliers eliminados en 'SecondaryStorage': 87
+[2026-03-16 19:00:53] Total outliers eliminados: 647
+[2026-03-16 19:00:53] Normalización de columnas completada
+[2026-03-16 19:00:53] ==================================================
+[2026-03-16 19:00:53] LIMPIEZA COMPLETADA
+[2026-03-16 19:00:53] ==================================================
+[2026-03-16 19:00:54] Datos limpios guardados en d:\Documentos\Ingenieria de Software y Datos\Infraestructura y arquitectura para Big Data\Eduard_Paez_EA2\src\static\xlsx\cleaned_data.xlsx
+
+================================================================================
+FIN DEL REPORTE
+================================================================================

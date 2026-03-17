@@ -31,7 +31,7 @@ jobs:
       - name: 🗄️ Create Database
         run: |
           cd src
-          python laptop_prices.py
+          python ingestion.py
 
       - name: 🧹 Run data cleaning script
         run: |

@@ -59,8 +59,8 @@ jobs:
 
       - name: 📤 Commit Results (if chasges)
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "eduard.paez@est.iudigital.edu.co"
+          git config --local user.name "eduardPaez2591"
           git add src/static/
           git diff --quiet && git diff --staged --quiet || git commit -m "🔄 Auto: Update cleaned data and audit report"
           git push

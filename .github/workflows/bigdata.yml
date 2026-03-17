@@ -56,12 +56,3 @@ jobs:
         run: |
           echo "=== Audit Report ==="
           cat src/static/auditoria/cleaning_report.txt
-
-      - name: 📤 Commit Results (if chasges)
-        run: |
-          git config --local user.email "eduard.paez@est.iudigital.edu.co"
-          git config --local user.name "eduardPaez2591"
-          git add src/static/
-          git diff --quiet && git diff --staged --quiet || git commit -m "🔄 Auto: Update cleaned data and audit report"
-          git push
-        continue-on-error: true
